@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at FIFO_100_16bit.v(106): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at FIFO_100_16bit.v(109): extended using "x" or "z"
