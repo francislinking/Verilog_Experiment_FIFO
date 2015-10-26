@@ -1,0 +1,518 @@
+Simulator report for FIFO_16bit_100
+Mon Oct 26 23:09:18 2015
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 235 nodes    ;
+; Simulation Coverage         ;      58.72 % ;
+; Total Number of Transitions ; 966          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------------+
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.72 % ;
+; Total nodes checked                                 ; 235          ;
+; Total output ports checked                          ; 235          ;
+; Total output ports with complete 1/0-value coverage ; 138          ;
+; Total output ports with no 1/0-value coverage       ; 84           ;
+; Total output ports with no 1-value coverage         ; 84           ;
+; Total output ports with no 0-value coverage         ; 97           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                   ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; |FIFO_16bit_100|state~2                                                                                  ; |FIFO_16bit_100|state~2                                                                            ; out              ;
+; |FIFO_16bit_100|state~3                                                                                  ; |FIFO_16bit_100|state~3                                                                            ; out              ;
+; |FIFO_16bit_100|rd~1                                                                                     ; |FIFO_16bit_100|rd~1                                                                               ; out              ;
+; |FIFO_16bit_100|wr~1                                                                                     ; |FIFO_16bit_100|wr~1                                                                               ; out              ;
+; |FIFO_16bit_100|state~4                                                                                  ; |FIFO_16bit_100|state~4                                                                            ; out              ;
+; |FIFO_16bit_100|state~5                                                                                  ; |FIFO_16bit_100|state~5                                                                            ; out              ;
+; |FIFO_16bit_100|end_p~13                                                                                 ; |FIFO_16bit_100|end_p~13                                                                           ; out              ;
+; |FIFO_16bit_100|head_p[0]~reg0                                                                           ; |FIFO_16bit_100|head_p[0]~reg0                                                                     ; regout           ;
+; |FIFO_16bit_100|head_p~13                                                                                ; |FIFO_16bit_100|head_p~13                                                                          ; out              ;
+; |FIFO_16bit_100|state~6                                                                                  ; |FIFO_16bit_100|state~6                                                                            ; out              ;
+; |FIFO_16bit_100|state~7                                                                                  ; |FIFO_16bit_100|state~7                                                                            ; out              ;
+; |FIFO_16bit_100|end_p~20                                                                                 ; |FIFO_16bit_100|end_p~20                                                                           ; out              ;
+; |FIFO_16bit_100|wr~2                                                                                     ; |FIFO_16bit_100|wr~2                                                                               ; out              ;
+; |FIFO_16bit_100|rd~2                                                                                     ; |FIFO_16bit_100|rd~2                                                                               ; out              ;
+; |FIFO_16bit_100|head_p~20                                                                                ; |FIFO_16bit_100|head_p~20                                                                          ; out              ;
+; |FIFO_16bit_100|rd~reg0                                                                                  ; |FIFO_16bit_100|rd~reg0                                                                            ; regout           ;
+; |FIFO_16bit_100|wr~reg0                                                                                  ; |FIFO_16bit_100|wr~reg0                                                                            ; regout           ;
+; |FIFO_16bit_100|end_p[0]~reg0                                                                            ; |FIFO_16bit_100|end_p[0]~reg0                                                                      ; regout           ;
+; |FIFO_16bit_100|state[0]~reg0                                                                            ; |FIFO_16bit_100|state[0]~reg0                                                                      ; regout           ;
+; |FIFO_16bit_100|state[1]~reg0                                                                            ; |FIFO_16bit_100|state[1]~reg0                                                                      ; regout           ;
+; |FIFO_16bit_100|clk                                                                                      ; |FIFO_16bit_100|clk                                                                                ; out              ;
+; |FIFO_16bit_100|fifo_wr                                                                                  ; |FIFO_16bit_100|fifo_wr                                                                            ; out              ;
+; |FIFO_16bit_100|fifo_rd                                                                                  ; |FIFO_16bit_100|fifo_rd                                                                            ; out              ;
+; |FIFO_16bit_100|state[0]                                                                                 ; |FIFO_16bit_100|state[0]                                                                           ; pin_out          ;
+; |FIFO_16bit_100|state[1]                                                                                 ; |FIFO_16bit_100|state[1]                                                                           ; pin_out          ;
+; |FIFO_16bit_100|head_p[0]                                                                                ; |FIFO_16bit_100|head_p[0]                                                                          ; pin_out          ;
+; |FIFO_16bit_100|end_p[0]                                                                                 ; |FIFO_16bit_100|end_p[0]                                                                           ; pin_out          ;
+; |FIFO_16bit_100|fifo_in[0]                                                                               ; |FIFO_16bit_100|fifo_in[0]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[1]                                                                               ; |FIFO_16bit_100|fifo_in[1]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[2]                                                                               ; |FIFO_16bit_100|fifo_in[2]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[3]                                                                               ; |FIFO_16bit_100|fifo_in[3]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[4]                                                                               ; |FIFO_16bit_100|fifo_in[4]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[5]                                                                               ; |FIFO_16bit_100|fifo_in[5]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[6]                                                                               ; |FIFO_16bit_100|fifo_in[6]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[7]                                                                               ; |FIFO_16bit_100|fifo_in[7]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[8]                                                                               ; |FIFO_16bit_100|fifo_in[8]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[9]                                                                               ; |FIFO_16bit_100|fifo_in[9]                                                                         ; out              ;
+; |FIFO_16bit_100|fifo_in[10]                                                                              ; |FIFO_16bit_100|fifo_in[10]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_in[11]                                                                              ; |FIFO_16bit_100|fifo_in[11]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_in[12]                                                                              ; |FIFO_16bit_100|fifo_in[12]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_in[13]                                                                              ; |FIFO_16bit_100|fifo_in[13]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_in[14]                                                                              ; |FIFO_16bit_100|fifo_in[14]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_in[15]                                                                              ; |FIFO_16bit_100|fifo_in[15]                                                                        ; out              ;
+; |FIFO_16bit_100|fifo_out[0]                                                                              ; |FIFO_16bit_100|fifo_out[0]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[1]                                                                              ; |FIFO_16bit_100|fifo_out[1]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[2]                                                                              ; |FIFO_16bit_100|fifo_out[2]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[3]                                                                              ; |FIFO_16bit_100|fifo_out[3]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[4]                                                                              ; |FIFO_16bit_100|fifo_out[4]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[5]                                                                              ; |FIFO_16bit_100|fifo_out[5]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[6]                                                                              ; |FIFO_16bit_100|fifo_out[6]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[7]                                                                              ; |FIFO_16bit_100|fifo_out[7]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[8]                                                                              ; |FIFO_16bit_100|fifo_out[8]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[9]                                                                              ; |FIFO_16bit_100|fifo_out[9]                                                                        ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[10]                                                                             ; |FIFO_16bit_100|fifo_out[10]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[11]                                                                             ; |FIFO_16bit_100|fifo_out[11]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[12]                                                                             ; |FIFO_16bit_100|fifo_out[12]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[13]                                                                             ; |FIFO_16bit_100|fifo_out[13]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[14]                                                                             ; |FIFO_16bit_100|fifo_out[14]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|fifo_out[15]                                                                             ; |FIFO_16bit_100|fifo_out[15]                                                                       ; pin_out          ;
+; |FIFO_16bit_100|nempty                                                                                   ; |FIFO_16bit_100|nempty                                                                             ; pin_out          ;
+; |FIFO_16bit_100|wr                                                                                       ; |FIFO_16bit_100|wr                                                                                 ; pin_out          ;
+; |FIFO_16bit_100|rd                                                                                       ; |FIFO_16bit_100|rd                                                                                 ; pin_out          ;
+; |FIFO_16bit_100|clk_op                                                                                   ; |FIFO_16bit_100|clk_op                                                                             ; pin_out          ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a0  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[0]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a1  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[1]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a2  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[2]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a3  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[3]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a4  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[4]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a5  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[5]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a6  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[6]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a7  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[7]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a8  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[8]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a9  ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[9]  ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a10 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[10] ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a11 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[11] ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a12 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[12] ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a13 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[13] ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a14 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[14] ; portbdataout0    ;
+; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a15 ; |FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|q_b[15] ; portbdataout0    ;
+; |FIFO_16bit_100|Selector0~0                                                                              ; |FIFO_16bit_100|Selector0~0                                                                        ; out0             ;
+; |FIFO_16bit_100|Selector0~2                                                                              ; |FIFO_16bit_100|Selector0~2                                                                        ; out0             ;
+; |FIFO_16bit_100|Selector1~0                                                                              ; |FIFO_16bit_100|Selector1~0                                                                        ; out0             ;
+; |FIFO_16bit_100|Selector1~1                                                                              ; |FIFO_16bit_100|Selector1~1                                                                        ; out0             ;
+; |FIFO_16bit_100|Selector2~0                                                                              ; |FIFO_16bit_100|Selector2~0                                                                        ; out              ;
+; |FIFO_16bit_100|Selector2~1                                                                              ; |FIFO_16bit_100|Selector2~1                                                                        ; out              ;
+; |FIFO_16bit_100|Selector3~0                                                                              ; |FIFO_16bit_100|Selector3~0                                                                        ; out              ;
+; |FIFO_16bit_100|Selector3~1                                                                              ; |FIFO_16bit_100|Selector3~1                                                                        ; out              ;
+; |FIFO_16bit_100|Decoder0~0                                                                               ; |FIFO_16bit_100|Decoder0~0                                                                         ; out0             ;
+; |FIFO_16bit_100|Decoder0~1                                                                               ; |FIFO_16bit_100|Decoder0~1                                                                         ; out0             ;
+; |FIFO_16bit_100|Add0~0                                                                                   ; |FIFO_16bit_100|Add0~0                                                                             ; out0             ;
+; |FIFO_16bit_100|Add1~0                                                                                   ; |FIFO_16bit_100|Add1~0                                                                             ; out0             ;
+; |FIFO_16bit_100|Equal0~0                                                                                 ; |FIFO_16bit_100|Equal0~0                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal0~1                                                                                 ; |FIFO_16bit_100|Equal0~1                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal0~7                                                                                 ; |FIFO_16bit_100|Equal0~7                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal1~0                                                                                 ; |FIFO_16bit_100|Equal1~0                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal1~1                                                                                 ; |FIFO_16bit_100|Equal1~1                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal2~0                                                                                 ; |FIFO_16bit_100|Equal2~0                                                                           ; out0             ;
+; |FIFO_16bit_100|Equal3~0                                                                                 ; |FIFO_16bit_100|Equal3~0                                                                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~0                                                  ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~0                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~1                                                  ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~1                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~2                                                  ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|_~2                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~0                                                  ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~0                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~1                                                  ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~1                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~2                                                  ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|_~2                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~0                                                  ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~0                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~1                                                  ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~1                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~2                                                  ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|_~2                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~0                                                  ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~0                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~1                                                  ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~1                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout                           ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0                               ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~2                                                  ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|_~2                                            ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                               ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1                         ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                                 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout                           ; out0             ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |FIFO_16bit_100|head_p[5]~reg0                                             ; |FIFO_16bit_100|head_p[5]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|head_p[4]~reg0                                             ; |FIFO_16bit_100|head_p[4]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|head_p[3]~reg0                                             ; |FIFO_16bit_100|head_p[3]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|state~0                                                    ; |FIFO_16bit_100|state~0                                                    ; out              ;
+; |FIFO_16bit_100|state~1                                                    ; |FIFO_16bit_100|state~1                                                    ; out              ;
+; |FIFO_16bit_100|rd~0                                                       ; |FIFO_16bit_100|rd~0                                                       ; out              ;
+; |FIFO_16bit_100|wr~0                                                       ; |FIFO_16bit_100|wr~0                                                       ; out              ;
+; |FIFO_16bit_100|head_p[2]~reg0                                             ; |FIFO_16bit_100|head_p[2]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|end_p~7                                                    ; |FIFO_16bit_100|end_p~7                                                    ; out              ;
+; |FIFO_16bit_100|end_p~8                                                    ; |FIFO_16bit_100|end_p~8                                                    ; out              ;
+; |FIFO_16bit_100|end_p~9                                                    ; |FIFO_16bit_100|end_p~9                                                    ; out              ;
+; |FIFO_16bit_100|end_p~10                                                   ; |FIFO_16bit_100|end_p~10                                                   ; out              ;
+; |FIFO_16bit_100|end_p~11                                                   ; |FIFO_16bit_100|end_p~11                                                   ; out              ;
+; |FIFO_16bit_100|head_p~7                                                   ; |FIFO_16bit_100|head_p~7                                                   ; out              ;
+; |FIFO_16bit_100|head_p~8                                                   ; |FIFO_16bit_100|head_p~8                                                   ; out              ;
+; |FIFO_16bit_100|head_p~9                                                   ; |FIFO_16bit_100|head_p~9                                                   ; out              ;
+; |FIFO_16bit_100|head_p~10                                                  ; |FIFO_16bit_100|head_p~10                                                  ; out              ;
+; |FIFO_16bit_100|head_p~11                                                  ; |FIFO_16bit_100|head_p~11                                                  ; out              ;
+; |FIFO_16bit_100|end_p~14                                                   ; |FIFO_16bit_100|end_p~14                                                   ; out              ;
+; |FIFO_16bit_100|end_p~15                                                   ; |FIFO_16bit_100|end_p~15                                                   ; out              ;
+; |FIFO_16bit_100|end_p~16                                                   ; |FIFO_16bit_100|end_p~16                                                   ; out              ;
+; |FIFO_16bit_100|end_p~17                                                   ; |FIFO_16bit_100|end_p~17                                                   ; out              ;
+; |FIFO_16bit_100|end_p~18                                                   ; |FIFO_16bit_100|end_p~18                                                   ; out              ;
+; |FIFO_16bit_100|head_p~14                                                  ; |FIFO_16bit_100|head_p~14                                                  ; out              ;
+; |FIFO_16bit_100|head_p~15                                                  ; |FIFO_16bit_100|head_p~15                                                  ; out              ;
+; |FIFO_16bit_100|head_p~16                                                  ; |FIFO_16bit_100|head_p~16                                                  ; out              ;
+; |FIFO_16bit_100|head_p~17                                                  ; |FIFO_16bit_100|head_p~17                                                  ; out              ;
+; |FIFO_16bit_100|head_p~18                                                  ; |FIFO_16bit_100|head_p~18                                                  ; out              ;
+; |FIFO_16bit_100|head_p[6]~reg0                                             ; |FIFO_16bit_100|head_p[6]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|end_p[2]~reg0                                              ; |FIFO_16bit_100|end_p[2]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[3]~reg0                                              ; |FIFO_16bit_100|end_p[3]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[4]~reg0                                              ; |FIFO_16bit_100|end_p[4]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[5]~reg0                                              ; |FIFO_16bit_100|end_p[5]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[6]~reg0                                              ; |FIFO_16bit_100|end_p[6]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|rst                                                        ; |FIFO_16bit_100|rst                                                        ; out              ;
+; |FIFO_16bit_100|error                                                      ; |FIFO_16bit_100|error                                                      ; pin_out          ;
+; |FIFO_16bit_100|head_p[2]                                                  ; |FIFO_16bit_100|head_p[2]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[3]                                                  ; |FIFO_16bit_100|head_p[3]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[4]                                                  ; |FIFO_16bit_100|head_p[4]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[5]                                                  ; |FIFO_16bit_100|head_p[5]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[6]                                                  ; |FIFO_16bit_100|head_p[6]                                                  ; pin_out          ;
+; |FIFO_16bit_100|end_p[2]                                                   ; |FIFO_16bit_100|end_p[2]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[3]                                                   ; |FIFO_16bit_100|end_p[3]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[4]                                                   ; |FIFO_16bit_100|end_p[4]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[5]                                                   ; |FIFO_16bit_100|end_p[5]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[6]                                                   ; |FIFO_16bit_100|end_p[6]                                                   ; pin_out          ;
+; |FIFO_16bit_100|nfull                                                      ; |FIFO_16bit_100|nfull                                                      ; pin_out          ;
+; |FIFO_16bit_100|Selector0~1                                                ; |FIFO_16bit_100|Selector0~1                                                ; out0             ;
+; |FIFO_16bit_100|Selector1~2                                                ; |FIFO_16bit_100|Selector1~2                                                ; out0             ;
+; |FIFO_16bit_100|Add0~3                                                     ; |FIFO_16bit_100|Add0~3                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~4                                                     ; |FIFO_16bit_100|Add0~4                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~5                                                     ; |FIFO_16bit_100|Add0~5                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~6                                                     ; |FIFO_16bit_100|Add0~6                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~7                                                     ; |FIFO_16bit_100|Add0~7                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~8                                                     ; |FIFO_16bit_100|Add0~8                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~9                                                     ; |FIFO_16bit_100|Add0~9                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~10                                                    ; |FIFO_16bit_100|Add0~10                                                    ; out0             ;
+; |FIFO_16bit_100|Add0~11                                                    ; |FIFO_16bit_100|Add0~11                                                    ; out0             ;
+; |FIFO_16bit_100|Add1~3                                                     ; |FIFO_16bit_100|Add1~3                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~4                                                     ; |FIFO_16bit_100|Add1~4                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~5                                                     ; |FIFO_16bit_100|Add1~5                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~6                                                     ; |FIFO_16bit_100|Add1~6                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~7                                                     ; |FIFO_16bit_100|Add1~7                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~8                                                     ; |FIFO_16bit_100|Add1~8                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~9                                                     ; |FIFO_16bit_100|Add1~9                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~10                                                    ; |FIFO_16bit_100|Add1~10                                                    ; out0             ;
+; |FIFO_16bit_100|Equal0~2                                                   ; |FIFO_16bit_100|Equal0~2                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~3                                                   ; |FIFO_16bit_100|Equal0~3                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~4                                                   ; |FIFO_16bit_100|Equal0~4                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~5                                                   ; |FIFO_16bit_100|Equal0~5                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~6                                                   ; |FIFO_16bit_100|Equal0~6                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~3                                                   ; |FIFO_16bit_100|Equal1~3                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~4                                                   ; |FIFO_16bit_100|Equal1~4                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~5                                                   ; |FIFO_16bit_100|Equal1~5                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~6                                                   ; |FIFO_16bit_100|Equal1~6                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~7                                                   ; |FIFO_16bit_100|Equal1~7                                                   ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |FIFO_16bit_100|head_p[5]~reg0                                             ; |FIFO_16bit_100|head_p[5]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|head_p[4]~reg0                                             ; |FIFO_16bit_100|head_p[4]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|head_p[3]~reg0                                             ; |FIFO_16bit_100|head_p[3]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|state~0                                                    ; |FIFO_16bit_100|state~0                                                    ; out              ;
+; |FIFO_16bit_100|state~1                                                    ; |FIFO_16bit_100|state~1                                                    ; out              ;
+; |FIFO_16bit_100|rd~0                                                       ; |FIFO_16bit_100|rd~0                                                       ; out              ;
+; |FIFO_16bit_100|wr~0                                                       ; |FIFO_16bit_100|wr~0                                                       ; out              ;
+; |FIFO_16bit_100|head_p[2]~reg0                                             ; |FIFO_16bit_100|head_p[2]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|end_p~7                                                    ; |FIFO_16bit_100|end_p~7                                                    ; out              ;
+; |FIFO_16bit_100|end_p~8                                                    ; |FIFO_16bit_100|end_p~8                                                    ; out              ;
+; |FIFO_16bit_100|end_p~9                                                    ; |FIFO_16bit_100|end_p~9                                                    ; out              ;
+; |FIFO_16bit_100|end_p~10                                                   ; |FIFO_16bit_100|end_p~10                                                   ; out              ;
+; |FIFO_16bit_100|end_p~11                                                   ; |FIFO_16bit_100|end_p~11                                                   ; out              ;
+; |FIFO_16bit_100|head_p[1]~reg0                                             ; |FIFO_16bit_100|head_p[1]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|end_p~12                                                   ; |FIFO_16bit_100|end_p~12                                                   ; out              ;
+; |FIFO_16bit_100|head_p~7                                                   ; |FIFO_16bit_100|head_p~7                                                   ; out              ;
+; |FIFO_16bit_100|head_p~8                                                   ; |FIFO_16bit_100|head_p~8                                                   ; out              ;
+; |FIFO_16bit_100|head_p~9                                                   ; |FIFO_16bit_100|head_p~9                                                   ; out              ;
+; |FIFO_16bit_100|head_p~10                                                  ; |FIFO_16bit_100|head_p~10                                                  ; out              ;
+; |FIFO_16bit_100|head_p~11                                                  ; |FIFO_16bit_100|head_p~11                                                  ; out              ;
+; |FIFO_16bit_100|head_p~12                                                  ; |FIFO_16bit_100|head_p~12                                                  ; out              ;
+; |FIFO_16bit_100|end_p~14                                                   ; |FIFO_16bit_100|end_p~14                                                   ; out              ;
+; |FIFO_16bit_100|end_p~15                                                   ; |FIFO_16bit_100|end_p~15                                                   ; out              ;
+; |FIFO_16bit_100|end_p~16                                                   ; |FIFO_16bit_100|end_p~16                                                   ; out              ;
+; |FIFO_16bit_100|end_p~17                                                   ; |FIFO_16bit_100|end_p~17                                                   ; out              ;
+; |FIFO_16bit_100|end_p~18                                                   ; |FIFO_16bit_100|end_p~18                                                   ; out              ;
+; |FIFO_16bit_100|end_p~19                                                   ; |FIFO_16bit_100|end_p~19                                                   ; out              ;
+; |FIFO_16bit_100|head_p~14                                                  ; |FIFO_16bit_100|head_p~14                                                  ; out              ;
+; |FIFO_16bit_100|head_p~15                                                  ; |FIFO_16bit_100|head_p~15                                                  ; out              ;
+; |FIFO_16bit_100|head_p~16                                                  ; |FIFO_16bit_100|head_p~16                                                  ; out              ;
+; |FIFO_16bit_100|head_p~17                                                  ; |FIFO_16bit_100|head_p~17                                                  ; out              ;
+; |FIFO_16bit_100|head_p~18                                                  ; |FIFO_16bit_100|head_p~18                                                  ; out              ;
+; |FIFO_16bit_100|head_p~19                                                  ; |FIFO_16bit_100|head_p~19                                                  ; out              ;
+; |FIFO_16bit_100|head_p[6]~reg0                                             ; |FIFO_16bit_100|head_p[6]~reg0                                             ; regout           ;
+; |FIFO_16bit_100|end_p[1]~reg0                                              ; |FIFO_16bit_100|end_p[1]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[2]~reg0                                              ; |FIFO_16bit_100|end_p[2]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[3]~reg0                                              ; |FIFO_16bit_100|end_p[3]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[4]~reg0                                              ; |FIFO_16bit_100|end_p[4]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[5]~reg0                                              ; |FIFO_16bit_100|end_p[5]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|end_p[6]~reg0                                              ; |FIFO_16bit_100|end_p[6]~reg0                                              ; regout           ;
+; |FIFO_16bit_100|rst                                                        ; |FIFO_16bit_100|rst                                                        ; out              ;
+; |FIFO_16bit_100|error                                                      ; |FIFO_16bit_100|error                                                      ; pin_out          ;
+; |FIFO_16bit_100|head_p[1]                                                  ; |FIFO_16bit_100|head_p[1]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[2]                                                  ; |FIFO_16bit_100|head_p[2]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[3]                                                  ; |FIFO_16bit_100|head_p[3]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[4]                                                  ; |FIFO_16bit_100|head_p[4]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[5]                                                  ; |FIFO_16bit_100|head_p[5]                                                  ; pin_out          ;
+; |FIFO_16bit_100|head_p[6]                                                  ; |FIFO_16bit_100|head_p[6]                                                  ; pin_out          ;
+; |FIFO_16bit_100|end_p[1]                                                   ; |FIFO_16bit_100|end_p[1]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[2]                                                   ; |FIFO_16bit_100|end_p[2]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[3]                                                   ; |FIFO_16bit_100|end_p[3]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[4]                                                   ; |FIFO_16bit_100|end_p[4]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[5]                                                   ; |FIFO_16bit_100|end_p[5]                                                   ; pin_out          ;
+; |FIFO_16bit_100|end_p[6]                                                   ; |FIFO_16bit_100|end_p[6]                                                   ; pin_out          ;
+; |FIFO_16bit_100|nfull                                                      ; |FIFO_16bit_100|nfull                                                      ; pin_out          ;
+; |FIFO_16bit_100|Selector0~1                                                ; |FIFO_16bit_100|Selector0~1                                                ; out0             ;
+; |FIFO_16bit_100|Selector1~2                                                ; |FIFO_16bit_100|Selector1~2                                                ; out0             ;
+; |FIFO_16bit_100|Add0~1                                                     ; |FIFO_16bit_100|Add0~1                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~2                                                     ; |FIFO_16bit_100|Add0~2                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~3                                                     ; |FIFO_16bit_100|Add0~3                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~4                                                     ; |FIFO_16bit_100|Add0~4                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~5                                                     ; |FIFO_16bit_100|Add0~5                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~6                                                     ; |FIFO_16bit_100|Add0~6                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~7                                                     ; |FIFO_16bit_100|Add0~7                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~8                                                     ; |FIFO_16bit_100|Add0~8                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~9                                                     ; |FIFO_16bit_100|Add0~9                                                     ; out0             ;
+; |FIFO_16bit_100|Add0~10                                                    ; |FIFO_16bit_100|Add0~10                                                    ; out0             ;
+; |FIFO_16bit_100|Add0~11                                                    ; |FIFO_16bit_100|Add0~11                                                    ; out0             ;
+; |FIFO_16bit_100|Add1~1                                                     ; |FIFO_16bit_100|Add1~1                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~2                                                     ; |FIFO_16bit_100|Add1~2                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~3                                                     ; |FIFO_16bit_100|Add1~3                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~4                                                     ; |FIFO_16bit_100|Add1~4                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~5                                                     ; |FIFO_16bit_100|Add1~5                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~6                                                     ; |FIFO_16bit_100|Add1~6                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~7                                                     ; |FIFO_16bit_100|Add1~7                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~8                                                     ; |FIFO_16bit_100|Add1~8                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~9                                                     ; |FIFO_16bit_100|Add1~9                                                     ; out0             ;
+; |FIFO_16bit_100|Add1~10                                                    ; |FIFO_16bit_100|Add1~10                                                    ; out0             ;
+; |FIFO_16bit_100|Equal0~2                                                   ; |FIFO_16bit_100|Equal0~2                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~3                                                   ; |FIFO_16bit_100|Equal0~3                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~4                                                   ; |FIFO_16bit_100|Equal0~4                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~5                                                   ; |FIFO_16bit_100|Equal0~5                                                   ; out0             ;
+; |FIFO_16bit_100|Equal0~6                                                   ; |FIFO_16bit_100|Equal0~6                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~2                                                   ; |FIFO_16bit_100|Equal1~2                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~3                                                   ; |FIFO_16bit_100|Equal1~3                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~4                                                   ; |FIFO_16bit_100|Equal1~4                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~5                                                   ; |FIFO_16bit_100|Equal1~5                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~6                                                   ; |FIFO_16bit_100|Equal1~6                                                   ; out0             ;
+; |FIFO_16bit_100|Equal1~7                                                   ; |FIFO_16bit_100|Equal1~7                                                   ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux3|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |FIFO_16bit_100|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Mon Oct 26 23:09:18 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off FIFO_16bit_100 -c FIFO_16bit_100
+Info: Using vector source file "E:/Discipline/Verilog/Experiment/Verilog_Experiment_FIFO/FIFO_16bit_100.vwf"
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a0" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a1" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a2" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a3" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a4" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a5" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a6" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a7" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a8" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a9" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a10" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a11" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a12" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a13" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a14" assumed to occur on falling edge of input clock
+Warning: Write to auto-size memory block "FIFO_RAM:U1|altsyncram:altsyncram_component|altsyncram_uar1:auto_generated|ram_block1a15" assumed to occur on falling edge of input clock
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      58.72 %
+Info: Number of transitions in simulation is 966
+Info: Quartus II Simulator was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Mon Oct 26 23:09:18 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

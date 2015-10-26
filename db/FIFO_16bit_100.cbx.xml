@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="FIFO_16bit_100">
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_16bit_100|FIFO_RAM:U1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_uar1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_16bit_100|lpm_mux:Mux1" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_16bit_100|lpm_mux:Mux3" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_16bit_100|lpm_mux:Mux0" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_16bit_100|lpm_mux:Mux2" CBX_FILE_NAME="mux_0oc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

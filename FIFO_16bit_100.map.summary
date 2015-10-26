@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Mon Oct 26 22:42:23 2015
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : FIFO_16bit_100
+Top-level Entity Name : FIFO_16bit_100
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 36
+    Dedicated logic registers : 18
+Total registers : 18
+Total pins : 58
+Total virtual pins : 0
+Total block memory bits : 2,048
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0
